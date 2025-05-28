@@ -1,4 +1,4 @@
-# Producto Punto con Pthreads en C
+# Tarea con Pthreads - Kenny Martínez Fuentes
 
 Este proyecto implementa el cálculo del **producto punto** entre dos vectores utilizando **Programación Paralela con Pthreads**, como parte de la tarea de laboratorio de **Programación Paralela**. Se compara el rendimiento entre la versión secuencial y la versión paralela.
 
