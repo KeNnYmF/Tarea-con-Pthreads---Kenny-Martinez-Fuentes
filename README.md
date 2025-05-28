@@ -19,3 +19,18 @@ Puedes usar cualquier editor, como por ejemplo:
 - Visual Studio Code
 - nano, vim, gedit (editores en terminal)
 - CLion, Code::Blocks, o cualquier entorno C compatible
+
+## 3. Explicación del Código
+El programa realiza las siguientes acciones:
+
+- Solicita el tamaño N de los vectores y el número de hilos.
+- Lee los elementos del vector A y del vector B desde la entrada estándar.
+- Calcula el producto punto de los vectores de dos formas:
+
+A. De forma secuencial
+
+B. De forma paralela usando pthreads
+
+- Mide y muestra el tiempo de ejecución de ambas versiones usando la función clock() de la librería <time.h>.
+
+- Compara los resultados y tiempos.
