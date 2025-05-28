@@ -26,11 +26,28 @@ El programa realiza las siguientes acciones:
 - Solicita el tamaño N de los vectores y el número de hilos.
 - Lee los elementos del vector A y del vector B desde la entrada estándar.
 - Calcula el producto punto de los vectores de dos formas:
-
-A. De forma secuencial
-
-B. De forma paralela usando pthreads
+  A. De forma secuencial
+  B. De forma paralela usando pthreads
 
 - Mide y muestra el tiempo de ejecución de ambas versiones usando la función clock() de la librería <time.h>.
-
 - Compara los resultados y tiempos.
+
+## 4. Compilación
+Guarda el archivo fuente como producto_punto.c y compílalo con:
+```bash
+gcc -o producto_punto producto_punto.c -lpthread
+```
+
+## 5. Ejecución
+Puedes ejecutar el programa de forma interactiva o con un test automatizado para validar el rendimiento.
+```bash
+./producto_punto <<EOF
+1000000
+4
+$(yes 1 | head -n 1000000 | tr '\n' ' ')
+$(yes 1 | head -n 1000000 | tr '\n' ' ')
+EOF
+```
+## 6. Resultado
+A continuación se muestra una imagen con los tiempos de ejecución para la versión secuencial y la versión paralela:
+![Solución en bash](Imagen/Resultado.png)
