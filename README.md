@@ -50,4 +50,5 @@ EOF
 ```
 ## 6. Resultado
 A continuación se muestra una imagen con los tiempos de ejecución para la versión secuencial y la versión paralela:
+
 ![Solución en bash](Imagen/Resultado.png)
