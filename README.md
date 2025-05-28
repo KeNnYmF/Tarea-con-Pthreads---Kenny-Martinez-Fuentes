@@ -33,13 +33,13 @@ El programa realiza las siguientes acciones:
 - Compara los resultados y tiempos.
 
 ## 4. Compilación
-Guarda el archivo fuente como producto_punto.c y compílalo con:
+Se guarda el archivo fuente como producto_punto.c y compílalo con:
 ```bash
 gcc -o producto_punto producto_punto.c -lpthread
 ```
 
 ## 5. Ejecución
-Puedes ejecutar el programa de forma interactiva o con un test automatizado para validar el rendimiento.
+Se puede ejecutar el programa de forma interactiva o con un test automatizado para validar el rendimiento.
 ```bash
 ./producto_punto <<EOF
 1000000
